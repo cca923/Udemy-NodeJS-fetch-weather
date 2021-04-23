@@ -1,0 +1,171 @@
+body {
+  color: #333;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+header a {
+  color: #888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 250px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  border-radius: 2.5em;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888;
+  border-radius: 2.5em;
+  background: #888;
+  color: white;
+  padding: 8px;
+}
+
+.background-1 {
+  width: 100%;
+  height: 500px;
+  background: url(../img/IMG_8958.JPG);
+  background-size: cover;
+  margin: 0, auto, 100px;
+  background-attachment: scroll;
+}
+
+.hello-1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 30px 0 10px 30px;
+  padding-left: 25px;
+  border-left: 10px solid white;
+}
+.hello-2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-top: 1px;
+  padding-left: 25px;
+  border-left: 10px;
+  border-left: 10px solid transparent;
+}
+
+.introduction {
+  width: 100%;
+  height: 300px;
+  margin: 10, auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.carousel .carousel-item {
+  height: 400px;
+}
+
+.carousel .carousel-item img {
+  margin-top: 5px;
+  min-height: 400px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel .carousel-item span {
+  line-height: 30px;
+}
+
+.subtitle-C {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  background-color: rgb(40, 40, 40);
+}
+.subtitle-E {
+  font-size: 15px;
+  background-color: rgb(40, 40, 40);
+  font-weight: 500;
+}
+
+.overflow-auto {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(251, 246, 238);
+  line-height: 29px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.context-1 {
+  font-size: 30px;
+  font-family: Futura;
+}
+
+.video {
+  background-color: rgb(251, 246, 238);
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.context-2 {
+  line-height: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: Futura;
+  background-color: rgb(251, 246, 238);
+  text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .videobox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .videobox iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
