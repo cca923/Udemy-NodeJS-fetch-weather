@@ -249,8 +249,13 @@ h3 {
   margin-bottom: 30px;
 }
 
-#linkedin-icon {
+#icon {
   font-size: 30px;
+}
+
+#icon:hover {
+  transition: 0.2s;
+  color: #81b29a;
 }
 
 nav {
@@ -264,7 +269,7 @@ nav {
 
 .nav-right {
   display: inline-block;
-  box-sizing: border-box;
   position: absolute;
-  right: 3px;
+  right: 0px;
+  align-items: center;
 }
