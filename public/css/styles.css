@@ -16,20 +16,21 @@ body {
 
 footer {
   color: #888;
-  border-top: 1px solid #eeeeee;
+  border-top: 3px solid #d8e2dc;
   margin-top: 16px;
   padding: 16px 0;
 }
 
 header {
   margin-top: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 
 h1 {
   font-size: 64px;
   margin-bottom: 16px;
   font-weight: bold;
+  color: #4b4f41;
 }
 
 header a {
@@ -46,15 +47,17 @@ input {
   border: 1px solid #cccccc;
   border-radius: 2.5em;
   padding: 8px;
+  font-family: Futura, Arial, Helvetica, sans-serif;
 }
 
 button {
   cursor: pointer;
-  border: 1px solid #888;
+  border: 1px solid #e5e5e5;
   border-radius: 2.5em;
-  background: #888;
-  color: white;
+  background: #f0efeb;
+  color: black;
   padding: 8px;
+  font-family: Futura, Arial, Helvetica, sans-serif;
 }
 
 .background-1 {
@@ -124,7 +127,8 @@ button {
 .overflow-auto {
   width: 100%;
   padding: 15px;
-  background-color: rgb(251, 246, 238);
+  background-color: #f0efeb;
+  border-left: 5px solid #a5a58d;
   line-height: 29px;
   overflow: hidden;
   white-space: nowrap;
@@ -135,12 +139,14 @@ button {
 }
 
 .video {
-  background-color: rgb(251, 246, 238);
+  background-color: #f0efeb;
   padding: 25px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
+  border-left: 5px solid #a5a58d;
+  margin-bottom: 30px;
 }
 
 .context-2 {
@@ -149,8 +155,9 @@ button {
   padding-top: 20px;
   font-size: 30px;
   font-family: Futura;
-  background-color: rgb(251, 246, 238);
+  background-color: #f0efeb;
   text-align: center;
+  border-left: 5px solid #a5a58d;
 }
 
 @media (max-width: 1250px) {
@@ -168,4 +175,96 @@ button {
     width: 100%;
     height: 100%;
   }
+}
+
+@media (max-width: 800px) {
+  .input-up,
+  .input-down {
+    width: 100%;
+    height: 0;
+  }
+}
+
+.input-up {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 5px solid #a5a58d;
+  background: #f0efeb;
+  margin-bottom: 50px;
+}
+
+.input-down {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 5px solid #a5a58d;
+  background: #f0efeb;
+  margin-bottom: 30px;
+}
+
+.label-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-css {
+  margin-bottom: 3px;
+}
+
+.for-submit {
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.for-submit-button {
+  font-size: larger;
+  width: 200px;
+  cursor: pointer;
+  border: 3px solid #e5e5e5;
+  border-radius: 2.5em;
+  background: #f0efeb;
+  color: black;
+  padding: 8px;
+  margin: 0 auto;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+}
+
+.for-submit-button:hover {
+  background: #a5a58d;
+  border: 3px solid #6b705c;
+  transition: 0.2s;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#linkedin-icon {
+  font-size: 30px;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-left {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.nav-right {
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  right: 3px;
 }

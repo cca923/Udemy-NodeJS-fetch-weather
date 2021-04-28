@@ -9,11 +9,54 @@
   <link rel="icon" href="/img/weather.png">
 </head>
 
-<body>
-  <div class="main-content">
+<body onload="init()">
+
+   <div class="main-content">
   {{>header}}
-  <h1>{{helpText}}</h1>
   </div>
+  <h3>{{helpText}}</h3>
+
+ <form   enctype="text/plain" accept-charset="utf-8">
+ <div class="input-up">
+
+     <div class="label-flex">
+     <label class="label-css"  for="nameText">姓名 Name</label>
+     <input class="input-css" id="nameText" type="text" name="Name" placeholder="請輸入姓名" required>
+     </div>
+
+     <div class="label-flex">
+     <label class="label-css" for="emailText">電子郵件地址 Email Address</label>
+     <input class="input-css" id="emailText" type="email" name="Email"   placeholder="請輸入電子郵件地址" required>
+     </div>
+
+     <div class="label-flex">
+     <label class="label-css" for="telText">聯絡電話 Phone Number</label>
+     <input class="input-css" id="telText"type="tel" name="Phone" aria-invalid="false" placeholder="請輸入聯絡電話">
+     </div>
+
+ </div>
+
+    
+<div class="input-down">
+
+    <div class="label-flex">
+     <label class="label-css" for="subText">郵件主旨 Subject</label>
+     <input class="input-css" id="subText" type="text" name="Subject"   aria-invalid="false" placeholder="請輸入郵件主旨" required>
+    </div>
+
+    <div class="label-flex">
+     <label class="label-css" for="bodyText">郵件內容 Content</label>
+     <textarea iclass="input-css" id="bodyText" name="content" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="請輸入郵件內容" required></textarea>
+    </div>
+</div>
+             
+     <div class="for-submit">
+     <input class="for-submit-button" type="button" value="送出   Submit" onclick="submitHandler();">
+     <a id="mailTo"></a>
+     </div>
+
+ </form>
+
 
 {{>footer}}
 
