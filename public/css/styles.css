@@ -273,3 +273,10 @@ nav {
   right: 0px;
   align-items: center;
 }
+
+@media (max-width: 800px) {
+  nav {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
