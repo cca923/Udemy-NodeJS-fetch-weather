@@ -12,11 +12,16 @@
 <body>
   <div class="main-content">
    {{>header}}
-   <p>Use this site to get your weather!</p>
+   <p>
+   <label for="address-search"> 
+    輸入城市名稱以取得天氣預報！
+    Use this site to get your weather! 
+   </label>
+   </p>
 
    <form>
-     <input placeholder="Location">
-     <button>Search</button>
+     <input id="address-search" placeholder="Location">
+     <button id="for-search-weather">Search</button>
    </form>
 
    <p id="message-1"></p>

@@ -62,7 +62,7 @@ weatherForm.addEventListener("submit", (e) => {
 });
 
 /////////////////////////////////////////////////////
-//宣告預設表單內容為空 （你想要的話也可以加東西）
+//宣告預設表單內容為空
 var initSubject = "",
   initBody = "";
 

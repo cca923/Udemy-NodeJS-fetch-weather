@@ -44,15 +44,15 @@ header a {
 }
 
 input {
-  border: 1px solid #cccccc;
+  border: 2px solid #cccccc;
   border-radius: 2.5em;
   padding: 8px;
   font-family: Futura, Arial, Helvetica, sans-serif;
 }
 
-button {
+#for-search-weather {
   cursor: pointer;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-radius: 2.5em;
   background: #f0efeb;
   color: black;
@@ -180,11 +180,19 @@ button {
 @media (max-width: 800px) {
   .input-up,
   .input-down {
-    width: 100%;
+    width: 90%;
     height: 0;
   }
   h1 {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .input-up,
+  .input-down {
+    width: 80%;
+    height: 0;
   }
 }
 
@@ -301,6 +309,9 @@ nav {
   } */
   h1 {
     font-size: 33px;
+  }
+  h3 {
+    font-size: 15px;
   }
   header a {
     font-size: 10px;
